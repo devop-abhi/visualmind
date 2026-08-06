@@ -1,0 +1,19 @@
+.btn-primary {
+  @apply bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+}
+
+.card {
+  @apply bg-white/5 border border-white/10 rounded-2xl backdrop-blur-xl;
+}
+
+.section-title {
+  @apply text-5xl font-bold text-center;
+}
+
+.section-subtitle {
+  @apply text-center text-gray-400 mt-5 max-w-3xl mx-auto;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-6;
+}
