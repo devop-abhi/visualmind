@@ -1,6 +1,7 @@
 import Section from "./common/Section";
 import SectionTitle from "./common/SectionTitle";
 import FeatureCard from "./FeatureCard";
+
 import {
   BrainCircuit,
   BookOpen,
@@ -20,40 +21,54 @@ const Features = () => {
       icon: <PlayCircle size={40} />,
       title: "Interactive Visualizations",
       description:
-        "Watch algorithms, networks, and operating systems come to life through animations.",
+        "Watch algorithms, data structures, networks, and operating systems come to life through animations.",
     },
     {
       icon: <BookOpen size={40} />,
       title: "Smart Quiz",
       description:
-        "Test your understanding with AI-generated quizzes after every lesson.",
+        "Test your understanding with 3 AI-generated questions after every lesson.",
     },
     {
       icon: <FileText size={40} />,
       title: "Revision Notes",
       description:
-        "Generate concise notes and key takeaways instantly for exam preparation.",
+        "Get concise key points, time complexity, space complexity, and real-world examples for quick revision.",
     },
   ];
 
   return (
-   <Section>
+    <Section>
+
+      {/* Section Heading */}
 
       <SectionTitle
-  badge="FEATURES"
-  title="Why Choose VisualMind AI?"
-  subtitle="Everything you need to understand engineering concepts visually, interactively, and efficiently."
-/>
+        badge="FEATURES"
+        title="Why Choose VisualMind AI?"
+        subtitle="Everything you need to understand engineering concepts visually, interactively, and efficiently."
+      />
 
-      <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+      {/* Feature Cards */}
+
+      <div className="
+        grid
+        grid-cols-1
+        md:grid-cols-2
+        gap-6
+        lg:gap-8
+        mt-14
+      ">
 
         {features.map((feature, index) => (
+
           <FeatureCard
             key={index}
             icon={feature.icon}
             title={feature.title}
             description={feature.description}
           />
+
         ))}
 
       </div>

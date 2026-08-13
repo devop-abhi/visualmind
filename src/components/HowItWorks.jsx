@@ -5,68 +5,64 @@ import SectionTitle from "./common/SectionTitle";
 const HowItWorks = () => {
 
   const steps = [
-
     {
       number: "1",
-      title: "Search",
+      title: "Search Topic",
       description:
-        "Type any engineering topic you want to learn."
+        "Search for any engineering topic you want to understand.",
     },
 
     {
       number: "2",
-      title: "AI Understands",
+      title: "AI Explains",
       description:
-        "Gemini AI analyses the concept."
+        "AI generates a simple explanation, key points, complexity, and a real-world example.",
     },
 
     {
       number: "3",
-      title: "Visual Learning",
+      title: "Visualize",
       description:
-        "Beautiful diagrams and animations are generated."
+        "Watch the concept come to life through interactive diagrams and animations.",
     },
 
     {
       number: "4",
-      title: "Master Concept",
+      title: "Take the Quiz",
       description:
-        "Take quizzes and revise using AI notes."
-    }
-
+        "Test your understanding with 3 AI-generated questions and revise your concepts.",
+    },
   ];
 
   return (
 
     <Section>
 
-     <SectionTitle
-  badge="HOW IT WORKS"
-  title="How VisualMind Works"
-  subtitle="Learn engineering concepts in four simple steps."
-/>
+      <SectionTitle
+        badge="HOW IT WORKS"
+        title="Learn. Visualize. Master."
+        subtitle="Understand engineering concepts in four simple steps."
+      />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+      <div className="
+        grid
+        md:grid-cols-2
+        lg:grid-cols-4
+        gap-6
+        lg:gap-8
+        mt-16
+      ">
 
-        {
+        {steps.map((step, index) => (
 
-          steps.map((step, index)=>(
+          <StepCard
+            key={index}
+            number={step.number}
+            title={step.title}
+            description={step.description}
+          />
 
-            <StepCard
-
-              key={index}
-
-              number={step.number}
-
-              title={step.title}
-
-              description={step.description}
-
-            />
-
-          ))
-
-        }
+        ))}
 
       </div>
 

@@ -5,56 +5,71 @@ import SectionTitle from "./common/SectionTitle";
 const PopularTopics = () => {
 
   const topics = [
-
     {
-      icon: "📊",
+      icon: "🔍",
       title: "Binary Search",
       difficulty: "Easy",
     },
-
     {
-      icon: "⚙️",
-      title: "Deadlock",
-      difficulty: "Medium",
+      icon: "📚",
+      title: "Stack",
+      difficulty: "Easy",
     },
-
     {
       icon: "🌐",
-      title: "TCP Handshake",
-      difficulty: "Easy",
-    },
-
-    {
-      icon: "🗄️",
-      title: "SQL Join",
+      title: "BFS Traversal",
       difficulty: "Medium",
     },
-
     {
-      icon: "🧩",
+      icon: "🧭",
       title: "DFS Traversal",
-      difficulty: "Easy",
+      difficulty: "Medium",
     },
-
     {
-      icon: "💾",
-      title: "CPU Scheduling",
+      icon: "⚡",
+      title: "Dijkstra Algorithm",
       difficulty: "Hard",
     },
-
+    {
+      icon: "🔗",
+      title: "Linked List",
+      difficulty: "Easy",
+    },
+    {
+      icon: "🫧",
+      title: "Bubble Sort",
+      difficulty: "Easy",
+    },
+    {
+      icon: "⚡",
+      title: "Quick Sort",
+      difficulty: "Medium",
+    },
+    {
+      icon: "🌳",
+      title: "Binary Tree",
+      difficulty: "Medium",
+    },
   ];
 
   return (
 
     <Section>
 
-     <SectionTitle
-  badge="POPULAR TOPICS"
-  title="Start Learning Today"
-  subtitle="Choose one of our most popular engineering concepts and explore it through AI-powered visual explanations."
-/>
+      <SectionTitle
+        badge="POPULAR TOPICS"
+        title="Start Learning Today"
+        subtitle="Choose a topic and explore it through AI-powered explanations, interactive visualizations, and quizzes."
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+      <div className="
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        gap-6
+        mt-14
+      ">
 
         {topics.map((topic, index) => (
 

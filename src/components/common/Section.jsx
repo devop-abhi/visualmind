@@ -4,7 +4,7 @@ const Section = ({
 }) => {
   return (
     <section
-      className={`max-w-7xl mx-auto py-28 px-6 ${className}`}
+      className={`max-w-7xl mx-auto py-12 md:py-16 px-6 ${className}`}
     >
       {children}
     </section>
