@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Visualizer from "./pages/Visualizer";
+import Home from "./Pages/Home";
+import Visualizer from "./Pages/Visualizer";
 
 function App() {
   return (
